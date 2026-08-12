@@ -94,6 +94,20 @@ figure{margin:14px 0;border:2px solid var(--ink);box-shadow:var(--shadow);border
 figure img{display:block;width:100%;height:auto}
 figcaption{padding:12px 15px;font-size:14.5px;background:#fff;border-top:1px solid var(--line)}
 .pair{display:grid;grid-template-columns:1fr 1fr;gap:14px;align-items:stretch}
+/* the $0 breakdown, styled after the reference: gradient question, dark panels */
+.gq{font-size:24px;font-weight:900;letter-spacing:-.01em;margin:22px 0 14px;
+  background:linear-gradient(90deg,#5b34d6,#c0399f 45%,#e5623f);
+  -webkit-background-clip:text;background-clip:text;color:transparent}
+.dpanel{background:#17171a;color:#e9e6e1;border-radius:14px;padding:22px 26px;margin:0 0 14px}
+.dpanel p{margin:0 0 14px;max-width:none;font-size:16.5px;line-height:1.55;color:#cfcbc5}
+.dpanel p:last-child{margin-bottom:0}
+.dpanel p.lead{color:#fff;font-weight:800}
+.dpanel b{color:#fff}
+@media(max-width:700px){.gq{font-size:19px}.dpanel{padding:18px 18px}.dpanel p{font-size:15.5px}}
+body.present .gq{font-size:21px;margin-top:0}
+body.present .dpanel{padding:16px 20px;margin-bottom:10px}
+body.present .dpanel p{font-size:14.5px;margin-bottom:9px}
+
 /* three proofs across, matched frames so a wide screenshot and a tall one line up */
 .trio{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:14px 0;align-items:stretch}
 .trio figure{margin:0;display:flex;flex-direction:column}
@@ -801,6 +815,7 @@ body.present .declines .dq figcaption{font-size:11px;padding:6px 8px;line-height
   <h2 data-eid="e21d726bf93">Now, who this actually works for</h2>
   <p class="lead" data-eid="e922581d6fd">Instead of cherry picking the best results and showing you the top students, let me just show you the real transparent averages of everyone who completed the first 30 days of the program.</p>
   <figure class="survey"><img src="img/survey-results.webp" alt="" loading="lazy"><figcaption>Creator earnings impact, first 30 days. Based on 255+ survey responses.</figcaption></figure>
+  <h3 class="gq">What's the commonality between those who don't get results?</h3><div class="dpanel"><p class="lead">Why do the 4% of students report $0 in brand deals? We cross-referenced their activity in the program against the 96% who made anywhere from $500 to $5k+ after the first 30 days, and here's what the data showed:</p><p>77% of students who reported $0 after the first 30 days made fewer than 5 pieces of content.</p><p>Students who posted at least 10 pieces of content on their portfolio were 93% more likely to land their first paid brand deal within 30 days.</p><p>The top 7 students who made more than $5k in their first 30 days posted consistently for 22 out of the 30 days that month, pretty much every weekday and not weekends.</p></div><div class="dpanel"><p class="lead">There is a direct correlation between how consistent you are with your content and how much success you find.</p><p>Of the students who made $1k or more in their first 30 days, the average follower count was <b>921</b>, and over <b>72%</b> reported it was their first time ever making UGC.</p></div>
   </section>
 
 <section class="card" id="c40">
